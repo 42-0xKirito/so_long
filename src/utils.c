@@ -6,11 +6,11 @@
 /*   By: engiacom <engiacom@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/27 16:55:36 by engiacom          #+#    #+#             */
-/*   Updated: 2025/03/04 17:20:30 by engiacom         ###   ########.fr       */
+/*   Updated: 2025/04/29 15:54:43 by engiacom         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "so_long.h"
+#include "../include/so_long.h"
 
 t_lists	*ft_lstnewc(void)
 {

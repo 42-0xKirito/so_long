@@ -6,11 +6,11 @@
 /*   By: engiacom <engiacom@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/27 16:58:52 by engiacom          #+#    #+#             */
-/*   Updated: 2025/03/04 17:20:22 by engiacom         ###   ########.fr       */
+/*   Updated: 2025/04/29 15:54:26 by engiacom         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "so_long.h"
+#include "../include/so_long.h"
 
 int	check_road2(t_lists **f, t_data *data)
 {

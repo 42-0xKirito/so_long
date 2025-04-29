@@ -1,10 +1,20 @@
-NAME = so_long
-SRCS = main.c check.c image.c move.c put.c set.c map_parse.c utils.c cpy_map.c close.c check2.c
-OBJS = $(SRCS:.c=.o)
-CC = cc
-CFLAGS = -Wall -Wextra -Werror -g
+NAME        = so_long
 
-UNAME_S := $(shell uname -s)
+# Dossiers
+SRC_DIR     = src
+OBJ_DIR     = obj
+INC_DIR     = include
+
+# Fichiers sources et objets
+SRCS        = $(wildcard $(SRC_DIR)/*.c)
+OBJS        = $(patsubst $(SRC_DIR)/%.c, $(OBJ_DIR)/%.o, $(SRCS))
+
+# Compilation
+CC          = cc
+CFLAGS      = -Wall -Wextra -Werror -g -I$(INC_DIR)
+
+# Détection système
+UNAME_S     := $(shell uname -s)
 
 ifeq ($(UNAME_S), Darwin)
     MLX_DIR = mlx_opengl
@@ -14,24 +24,32 @@ else
     MLX_FLAGS = -I$(MLX_DIR) -L$(MLX_DIR) -lmlx -lXext -lX11 -lm -lz
 endif
 
-all: $(NAME)
+# Commandes
+RM          = rm -rf
+MKDIR       = mkdir -p
+
+# Règles
+all: $(OBJ_DIR) $(NAME)
+
+$(OBJ_DIR):
+	$(MKDIR) $(OBJ_DIR)
 
 $(NAME): $(OBJS)
 	@make -C libft
 	@make -C printf
-	$(CC) $(OBJS) $(CFLAGS) -Ilibft -Iprintf $(MLX_FLAGS) -Llibft -lft -Lprintf -lftprintf -o $(NAME)
+	$(CC) $(OBJS) $(CFLAGS) $(MLX_FLAGS) -Ilibft -Iprintf -Llibft -lft -Lprintf -lftprintf -o $(NAME)
 
-%.o: %.c
-	$(CC) $(CFLAGS) -Ilibft -Iprintf -I$(MLX_DIR) -c $< -o $@
+$(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
+	$(CC) $(CFLAGS) -I$(MLX_DIR) -c $< -o $@
 
 clean:
-	rm -f $(OBJS)
+	$(RM) $(OBJ_DIR)
 
 fclean: clean
 	@make fclean -C libft
 	@make fclean -C printf
-	rm -f $(NAME)
+	$(RM) $(NAME)
 
-re: clean all
+re: fclean all
 
 .PHONY: all clean fclean re

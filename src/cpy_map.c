@@ -6,11 +6,11 @@
 /*   By: engiacom <engiacom@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/27 17:01:43 by engiacom          #+#    #+#             */
-/*   Updated: 2025/03/12 16:56:23 by engiacom         ###   ########.fr       */
+/*   Updated: 2025/04/29 15:54:18 by engiacom         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "so_long.h"
+#include "../include/so_long.h"
 
 int	alloc_map(t_data *data, char *av)
 {

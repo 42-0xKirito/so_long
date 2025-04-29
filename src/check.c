@@ -6,11 +6,11 @@
 /*   By: engiacom <engiacom@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/19 05:57:34 by engiacom          #+#    #+#             */
-/*   Updated: 2025/03/12 17:04:32 by engiacom         ###   ########.fr       */
+/*   Updated: 2025/04/29 15:54:09 by engiacom         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "so_long.h"
+#include "../include/so_long.h"
 
 int	check_rectangle(t_data *data)
 {

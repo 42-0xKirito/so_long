@@ -6,11 +6,11 @@
 /*   By: engiacom <engiacom@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/19 05:53:28 by engiacom          #+#    #+#             */
-/*   Updated: 2025/03/04 17:16:03 by engiacom         ###   ########.fr       */
+/*   Updated: 2025/04/29 15:54:32 by engiacom         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "so_long.h"
+#include "../include/so_long.h"
 
 int	put_bg(t_data *data)
 {

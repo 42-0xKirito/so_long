@@ -6,7 +6,7 @@
 /*   By: engiacom <engiacom@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/17 10:49:41 by engiacom          #+#    #+#             */
-/*   Updated: 2025/03/12 17:05:05 by engiacom         ###   ########.fr       */
+/*   Updated: 2025/04/29 15:59:46 by engiacom         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 # define SO_LONG_H
 
 # include <mlx.h>
-# include <libft.h>
-# include <ft_printf.h>
+# include "../libft/libft.h"
+# include "../printf/ft_printf.h"
 
 typedef struct s_lists
 {

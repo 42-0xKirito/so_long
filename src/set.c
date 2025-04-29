@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   set.c                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: engiacom <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: engiacom <engiacom@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/19 06:09:49 by engiacom          #+#    #+#             */
-/*   Updated: 2025/03/06 12:38:39 by engiacom         ###   ########.fr       */
+/*   Updated: 2025/04/29 15:54:36 by engiacom         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "so_long.h"
+#include "../include/so_long.h"
 
 // void	init_collec(t_lists **collec, t_data *data)
 // {

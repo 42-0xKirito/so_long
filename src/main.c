@@ -6,11 +6,11 @@
 /*   By: engiacom <engiacom@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/17 10:48:21 by engiacom          #+#    #+#             */
-/*   Updated: 2025/03/12 17:00:49 by engiacom         ###   ########.fr       */
+/*   Updated: 2025/04/29 15:54:23 by engiacom         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "so_long.h"
+#include "../include/so_long.h"
 
 void	move_count(void)
 {

@@ -6,11 +6,11 @@
 /*   By: engiacom <engiacom@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/19 06:02:10 by engiacom          #+#    #+#             */
-/*   Updated: 2025/03/04 18:07:09 by engiacom         ###   ########.fr       */
+/*   Updated: 2025/04/29 15:54:03 by engiacom         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "so_long.h"
+#include "../include/so_long.h"
 
 void	print_gg(void)
 {
