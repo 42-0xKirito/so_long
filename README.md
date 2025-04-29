@@ -11,3 +11,7 @@
 - Graphismes avec MiniLibX
 - Gestion de la mémoire et des assets
 - Lecture de fichiers et parsing
+
+
+## Sujet du projet
+Vous pouvez consulter le sujet officiel ici : [📑 Sujet PDF](./so_long.subject.pdf)
